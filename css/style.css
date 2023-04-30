@@ -11,6 +11,9 @@ html,body{
 }
 
 main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     height: 100%;
     width: 100%;
 }
@@ -24,28 +27,29 @@ main{
     text-align: center;
 }
 
-/*Config from pic-buildings*/
+/*Config for width sections!*/
 
-.pic-buildings{
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center;
-    width: 30%;
+.pic-section, .login-section{
+    position: relative;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
 
 /*Config section with img*/
 .pic-section{
-    background-image:url('https://plus.unsplash.com/premium_photo-1677228571709-519f0d5153f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80');
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
+    background-blend-mode: color-burn;
+    background-color: rebeccapurple;
 }
 
 
 /*Config for image in login-section!*/
 .login-section{
-    background-image:url('https://assets.weforum.org/article/image/responsive_big_webp_J2Eq27IuOEd3b0UXL77jGKRrZKtn3e0cpwPQv3s-G6A.webp');
+    background-color: rgba(128, 128, 128, 0.137);
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -53,9 +57,11 @@ main{
 
 /*Config form form login-section*/
 .form-login{
-    background-color: rgba(255, 255, 255, 0.252);
+    background-color: rgba(88, 88, 88, 0.252);
     border:solid black  0 0 0.1rem ;
-    padding: 2rem;
+    padding: 1rem;
+    margin: 15rem 0;
+    border-radius: 12.5%;
 }
 
 .form-login .margin-field{
@@ -67,6 +73,7 @@ main{
 
 .form-login input{
     height: 2rem;
+    width: 100%;
 }
 
 .form-login label{
@@ -85,6 +92,26 @@ main{
     height: 3rem;
 }
 
-@media screen and (max-width: 393px) and (max-height:851px) {  /*Pixel 5!*/
 
+/*
+    Config for margin's of content inside sections!
+*/
+
+.title-page-header{
+    position: relative;
+    bottom: -1.5rem;
+}
+
+.title-page-header h1{
+    color: white;
+}
+
+.title-subtitle
+{
+    color: white;
+    font-weight: bold;
+    position: relative;
+    bottom:-3rem;
+    right: 0%;
+    left: 0%;
 }

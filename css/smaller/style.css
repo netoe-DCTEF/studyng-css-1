@@ -1,0 +1,25 @@
+@media screen and (max-height:333px),(max-width:500px) {
+    /*
+        Config the size of fonts!
+    */
+
+    .title-page-header h1{
+        font-size: medium;
+    }
+    .title-subtitle{
+        font-size: .70rem;
+    }
+}
+
+@media screen and (min-width:500px) and (min-height:490px) {
+
+    .form-login{
+        width: 100%;
+        background-color: none;
+        margin: 0 1.5rem;
+    }
+    .form-login label{
+        color: white;
+    }
+
+}
